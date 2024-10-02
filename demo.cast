@@ -1,0 +1,12 @@
+{"version": 2, "width": 160, "height": 16, "timestamp": 1727904147, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.033258, "o", "\u001b[?2004h\u001b]0;shkrobadasha@WIN-NPQH496FE33: ~/frontend-project-46\u0007\u001b[01;32mshkrobadasha@WIN-NPQH496FE33\u001b[00m:\u001b[01;34m~/frontend-project-46\u001b[00m$ "]
+[1.576862, "o", "gendiff file1.json file2.json"]
+[2.189482, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bnvm list\u001b[K"]
+[2.661544, "o", "\b\b\b\b\b\b\bode --version"]
+[3.173292, "o", "\b\b\b\b\b\b\b\b\b\u001b[2Pversion"]
+[3.588552, "o", "\b\b\b\b\b\b\b\b\b\b\b\bgendiff file1.json file2.json"]
+[6.055965, "o", "\r\n\u001b[?2004l\r"]
+[6.393092, "o", "{\r\n  - follow: false\r\n    host: hexlet.io\r\n  - proxy: 123.234.53.22\r\n  - timeout: 50\r\n  + timeout: 20\r\n  + verbose: true\r\n}\r\n"]
+[6.401735, "o", "\u001b[?2004h\u001b]0;shkrobadasha@WIN-NPQH496FE33: ~/frontend-project-46\u0007\u001b[01;32mshkrobadasha@WIN-NPQH496FE33\u001b[00m:\u001b[01;34m~/frontend-project-46\u001b[00m$ "]
+[10.642793, "o", "\u001b[?2004l\r\r\n"]
+[10.654138, "o", "exit\r\n"]
