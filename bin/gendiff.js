@@ -17,9 +17,6 @@ program
     const obj1 = letsParse(fs.readFileSync(first));
     const obj2 = letsParse(fs.readFileSync(second));
     console.log(genDiff(obj1, obj2))
-
-    //здесь будем вызывать функцию, которая читает названия файлов, 
-    //находит сами файлы, парсит их и печатате первую строку
     
   });
 
