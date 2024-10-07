@@ -1,24 +1,19 @@
 import { cwd } from 'node:process';
 import { createRequire } from "module";
 import _ from 'lodash';
-
 const require = createRequire(import.meta.url);
 const path = require('path');
+const fs = require('fs');
+
 
 export const letsParse = (readingFile) => JSON.parse(readingFile);
 
+export const genDiff = (first, second) => {
 
-export const normalName = (fileName) => {
-    const pathOfFile = fileName;
-    if (!fileName.startsWith('/')) {
-        const currentDirectory = cwd();
-        console.log(currentDirectory)
-        return path.resolve(`${currentDirectory}`, fileName);
-    }
-    return pathOfFile;
-}
 
-export const genDiff = (obj1, obj2) => {
+    const obj1 = letsParse(fs.readFileSync(first));
+    const obj2 = letsParse(fs.readFileSync(second));
+
     const keys1 = Object.keys(obj1);
     const keys2 = Object.keys(obj2);
     const keys = _.union(keys1, keys2); //уникальные ключи
@@ -54,7 +49,6 @@ export const genDiff = (obj1, obj2) => {
     
     return getFormattedOutput(totalResult)
   }
-
 const getFormattedOutput = (arr) => {
   let result = '{\n';
   arr.forEach((item) => {

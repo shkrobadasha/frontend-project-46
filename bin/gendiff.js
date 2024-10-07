@@ -14,10 +14,9 @@ program
   .arguments('<filepath1> <filepath2>')
   .option('-f, --format [type]', 'output format')
   .action((first, second) => {
-    const obj1 = letsParse(fs.readFileSync(first));
-    const obj2 = letsParse(fs.readFileSync(second));
-    console.log(genDiff(obj1, obj2))
-    
+    console.log(genDiff(first, second))
   });
 
 program.parse();
+
+//добавить парсер для уамл, возможно, стоит передавать сразу first?, second и у них считывать расширение, а потом делатт fs read
