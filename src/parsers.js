@@ -4,12 +4,12 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
 
-export const LetsParse = (readingFile) => {
-  const format = path.extname(readingFile);
+export const letsParse = (nameOfFile) => {
+  const format = path.extname(nameOfFile);
   if (format === '.json') {
-      return JSON.parse(fs.readFileSync(readingFile));
+      return JSON.parse(fs.readFileSync(nameOfFile));
   }else if (format === '.yml' || format === '.yaml'){
-    return yaml.load(fs.readFileSync(readingFile, "utf8"));
+    return yaml.load(fs.readFileSync(fs.readFileSync(nameOfFile), "utf8"));
   }
 }
 

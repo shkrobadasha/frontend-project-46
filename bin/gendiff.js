@@ -1,11 +1,8 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import { letsParse } from '../src/index.js';
-import { createRequire } from "module";
 import { genDiff } from '../src/index.js';
-const require = createRequire(import.meta.url);
-const fs = require('fs');
+
 
 program
   .name('gendiff')
