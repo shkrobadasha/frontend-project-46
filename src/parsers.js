@@ -9,7 +9,7 @@ export const letsParse = (nameOfFile) => {
   if (format === '.json') {
       return JSON.parse(fs.readFileSync(nameOfFile));
   }else if (format === '.yml' || format === '.yaml'){
-    return yaml.load(fs.readFileSync(fs.readFileSync(nameOfFile), "utf8"));
+    return yaml.load(fs.readFileSync(nameOfFile, "utf8"));
   }
 }
 
