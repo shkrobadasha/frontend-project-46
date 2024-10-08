@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import { genDiff } from '../src/index.js';
-
+import genDiff from '../src/index.js';
 
 program
   .name('gendiff')
@@ -11,9 +10,9 @@ program
   .arguments('<filepath1> <filepath2>')
   .option('-f, --format [type]', 'output format')
   .action((first, second) => {
-    console.log(genDiff(first, second))
+    /* eslint-disable no-console */
+    console.log(genDiff(first, second));
+    /* eslint-disable no-console */
   });
 
 program.parse();
-
-//добавить парсер для уамл, возможно, стоит передавать сразу first?, second и у них считывать расширение, а потом делатт fs read

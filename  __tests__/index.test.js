@@ -1,7 +1,5 @@
 
-import { genDiff } from "../src/index.js";
-import { letsParse } from "../src/parsers.js";
-import fs from 'fs';
+import genDiff from '../src/index.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { expect, test } from '@jest/globals';
