@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { letsParse } from './parsers.js';
+import letsParse from './parsers.js';
 
 const getFormattedOutput = (arr) => {
   let result = '{\n';
@@ -23,10 +23,10 @@ const genDiff = (first, second) => {
   const keys = _.union(keys1, keys2); // уникальные ключи
 
   const result = {};
-  for (const key of keys) {
-    if (!obj1.hasOwnProperty(key)) {
+  keys.forEach((key) => {
+    if (!Object.prototype.hasOwnProperty.call(obj1, key)) {
       result[`+ ${key}`] = obj2[key]; //+
-    } else if (!obj2.hasOwnProperty(key)) {
+    } else if (!Object.prototype.hasOwnProperty.call(obj2, key)) {
       result[`- ${key}`] = obj1[key]; //-
     } else if (obj1[key] !== obj2[key]) {
       result[`- ${key}`] = obj1[key];
@@ -34,7 +34,7 @@ const genDiff = (first, second) => {
     } else {
       result[key] = obj1[key];
     }
-  }
+  });
 
   const totalResult = Object.entries(result);
   totalResult.sort((a, b) => {
