@@ -1,14 +1,11 @@
-install: deps-install
-	npx simple-git-hooks
+install: 
+	npm ci
 
-run:
-	bin/nodejs-package.js 10
+publish:
+	npm publish --dry-run
 
-deps-install:
-	npm ci --legacy-peer-deps
-
-deps-update:
-	npx ncu -u
+gendiff:
+	node bin/gendiff.jsu
 
 test:
 	npm test
