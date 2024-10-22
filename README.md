@@ -8,3 +8,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/651a1708d65debe8baf3/maintainability)](https://codeclimate.com/github/shkrobadasha/frontend-project-46/maintainability)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/651a1708d65debe8baf3/test_coverage)](https://codeclimate.com/github/shkrobadasha/frontend-project-46/test_coverage)
+
+Аскинема (шаг 7): https://asciinema.org/a/BCkyGCTphed42slufsuPMZfGD

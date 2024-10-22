@@ -16,4 +16,3 @@ const letsParse = (nameOfFile) => {
 };
 
 export default letsParse;
-// поправить бейдж для тест ковередж и сделать чтобы тесты работали

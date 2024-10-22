@@ -5,7 +5,7 @@ publish:
 	npm publish --dry-run
 
 gendiff:
-	node bin/gendiff.jsu
+	node bin/commander.js
 
 test:
 	npm test

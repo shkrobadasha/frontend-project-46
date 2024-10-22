@@ -8,7 +8,7 @@ program
   .description('Compares two configuration files and shows a difference.')
   .version('0.8.0')
   .arguments('<filepath1> <filepath2>')
-  .option('-f, --format [type]', 'output format')
+  .option('-f, --format [type]', 'output format', 'stylish')
   .action((first, second) => {
     /* eslint-disable no-console */
     console.log(genDiff(first, second));
@@ -16,3 +16,5 @@ program
   });
 
 program.parse();
+
+console.log(program.opts().format);
