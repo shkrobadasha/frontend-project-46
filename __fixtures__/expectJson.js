@@ -41,7 +41,6 @@ const resultJsonString = `{
         }
         "fee": 100500
     }
-}
-`;
+}`;
 
 export default resultJsonString;

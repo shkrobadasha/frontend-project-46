@@ -41,7 +41,6 @@ const resultStylishString = `{
         }
         fee: 100500
     }
-}
-`;
+}`;
 
 export default resultStylishString;

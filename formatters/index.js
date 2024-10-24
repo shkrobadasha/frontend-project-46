@@ -6,13 +6,13 @@ import json from './json.js';
 const formatting = (format, result) => {
   switch (format) {
     case 'stylish':
-      return stylish(result);
+      return stylish(result).trim();
     case 'plain':
-      return plain(result);
+      return plain(result).trim();
     case 'json':
-      return json(result);
+      return json(result).trim();
     default:
-      return stylish(result);
+      return stylish(result).trim();
   }
 };
 
