@@ -53,6 +53,7 @@ export default [
       'no-console': 'off',
       'no-restricted-syntax': 'off',
       'import/no-extraneous-dependencies': 'off',
+      'consistent-return': 'off',
     },
   },
 ];

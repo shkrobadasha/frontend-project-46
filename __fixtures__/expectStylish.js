@@ -1,4 +1,4 @@
-const resultJsonString = `{
+const resultStylishString = `{
     common: {
       + follow: false
         setting1: Value 1
@@ -44,4 +44,4 @@ const resultJsonString = `{
 }
 `;
 
-export default resultJsonString;
+export default resultStylishString;

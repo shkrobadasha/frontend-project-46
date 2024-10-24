@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import letsParse from './parsers.js';
-import stylish from './stylish.js';
+import formatting from '../formatters/index.js';
 
 export const findDifferences = (obj1, obj2) => {
   const result = {};
@@ -32,11 +32,11 @@ export const findDifferences = (obj1, obj2) => {
   return result;
 };
 
-const genDiff = (first, second) => {
+const genDiff = (first, second, format) => {
   const obj1 = letsParse(first);
   const obj2 = letsParse(second);
   const result = findDifferences(obj1, obj2);
-  return stylish(result);
+  return formatting(format, result);
 };
 
 export default genDiff;
