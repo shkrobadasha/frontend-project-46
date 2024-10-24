@@ -16,7 +16,7 @@ const json = (tree) => {
 
     sortAlphabetically(pairs).forEach(([key, value]) => {
       const shift = ((key.startsWith('+ ') || key.startsWith('- '))) ? 2 : 0;
-      res += `${' '.repeat(4 * depth - shift)}${formatValue(key)}: `;
+      res += `${' '.repeat(4 * depth - shift)}"${(key)}": `;
       if (!_.isObject(value)) {
         res += `${formatValue(value)},\n`;
         return res;
