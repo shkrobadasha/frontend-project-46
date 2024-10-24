@@ -18,7 +18,7 @@ const json = (tree) => {
       const shift = ((key.startsWith('+ ') || key.startsWith('- '))) ? 2 : 0;
       res += `${' '.repeat(4 * depth - shift)}${formatValue(key)}: `;
       if (!_.isObject(value)) {
-        res += `${formatValue(value)}\n`;
+        res += `${formatValue(value)},\n`;
         return res;
       }
 
