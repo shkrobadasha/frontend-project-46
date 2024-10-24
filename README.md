@@ -12,3 +12,5 @@
 Аскинема (шаг 7): https://asciinema.org/a/BCkyGCTphed42slufsuPMZfGD
 
 Аскинема (шаг 8): https://asciinema.org/a/hLwZ3MQP0DkznabdbPL3M3vfN
+
+Аскинема (шаг 9): https://asciinema.org/a/Z4igUvo7MKsIb8s9lFbpYUhG1
