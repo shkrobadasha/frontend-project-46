@@ -1,5 +1,5 @@
-const sortAlphabetically = (totalResult) => {
-  totalResult.sort((a, b) => {
+const sortAlphabetically = (result) => {
+  const totalResult = [...result].sort((a, b) => {
     const nameA = (a[0].startsWith('+') || a[0].startsWith('-')) ? a[0].slice(2) : a[0];
     const nameB = (b[0].startsWith('+') || b[0].startsWith('-')) ? b[0].slice(2) : b[0];
 
