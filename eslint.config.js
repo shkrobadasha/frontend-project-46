@@ -54,7 +54,6 @@ export default [
       'no-restricted-syntax': 'off',
       'import/no-extraneous-dependencies': 'off',
       'consistent-return': 'off',
-      'fp/no-let': 'off',
     },
   },
 ];
