@@ -23,6 +23,8 @@ export const findDifferences = (obj1, obj2) => {
     }
   }
 
+  
+
   for (const key in obj2) {
     if (!Object.prototype.hasOwnProperty.call(obj1, key)) {
       result[`+ ${key}`] = obj2[key];
