@@ -31,6 +31,7 @@ const plain = (tree) => {
       } else if (_.isObject(value)) {
         return `${iter(value, predKey)}`;
       }
+      throw new Error('Formatthe result was generated with an error');
     });
 
     return res;
