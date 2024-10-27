@@ -10,11 +10,7 @@ program
   .arguments('<filepath1> <filepath2>')
   .option('-f, --format [type]', 'output format', 'stylish')
   .action((first, second) => {
-    /* eslint-disable no-console */
     console.log(genDiff(first, second, program.opts().format));
-    /* eslint-disable no-console */
   });
 
 program.parse();
-
-// console.log(program.opts().format);

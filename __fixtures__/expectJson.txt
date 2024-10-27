@@ -1,4 +1,4 @@
-const resultJsonString = `{
+{
   "common": {
     "setting1": "Value 1",
     "- setting2": 200,
@@ -41,6 +41,4 @@ const resultJsonString = `{
     },
     "fee": 100500
   }
-}`;
-
-export default resultJsonString;
+}

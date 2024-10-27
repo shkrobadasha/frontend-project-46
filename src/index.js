@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import letsParse from './parsers.js';
-import formatting from '../formatters/index.js';
+import formatting from './formatters/index.js';
 
 export const findDifferences = (obj1, obj2) => {
   const result = {};
@@ -22,15 +22,11 @@ export const findDifferences = (obj1, obj2) => {
       result[`- ${key}`] = obj1[key];
     }
   }
-
-  
-
   for (const key in obj2) {
     if (!Object.prototype.hasOwnProperty.call(obj1, key)) {
       result[`+ ${key}`] = obj2[key];
     }
   }
-
   return result;
 };
 

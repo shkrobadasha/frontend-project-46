@@ -1,18 +1,14 @@
-import { createRequire } from 'module';
+import * as yaml from 'js-yaml';
+import { getFormat, getContentOfFile } from './util.js';
 
-const require = createRequire(import.meta.url);
-const yaml = require('js-yaml');
-const fs = require('fs');
-const path = require('path');
-
-/* eslint-disable consistent-return */
 const letsParse = (nameOfFile) => {
-  const format = path.extname(nameOfFile);
+  const format = getFormat(nameOfFile);
   if (format === '.json') {
-    return JSON.parse(fs.readFileSync(nameOfFile));
+    return JSON.parse(getContentOfFile(nameOfFile));
   } if (format === '.yml' || format === '.yaml') {
-    return yaml.load(fs.readFileSync(nameOfFile, 'utf8'));
+    return yaml.load(getContentOfFile(nameOfFile));
   }
+  throw new Error('No current format');
 };
 
 export default letsParse;
