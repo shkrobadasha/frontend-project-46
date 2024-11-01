@@ -1,8 +1,10 @@
 import _ from 'lodash';
 import letsParse from './parsers.js';
 import formatting from './formatters/index.js';
+import { findDifferences } from './createTree.js';
 
-export const findDifferences = (obj1, obj2) => {
+
+/*export const findDifferences = (obj1, obj2) => {
   const result = {};
   for (const key in obj1) {
     if (Object.prototype.hasOwnProperty.call(obj1, key)
@@ -28,7 +30,7 @@ export const findDifferences = (obj1, obj2) => {
     }
   }
   return result;
-};
+};*/
 
 const genDiff = (first, second, format) => {
   const obj1 = letsParse(first);
