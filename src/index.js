@@ -1,7 +1,6 @@
-import _ from 'lodash';
 import letsParse from './parsers.js';
 import formatting from './formatters/index.js';
-import { findDifferences } from './createTree.js';
+import findDifferences from './createTree.js';
 
 const genDiff = (first, second, format) => {
   const obj1 = letsParse(first);
