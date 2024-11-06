@@ -1,6 +1,2 @@
-const json = (result) => {
-  const newRes = JSON.stringify(result, null, 2);
-
-  return newRes;
-};
+const json = (result) => JSON.stringify(result, null, 2);
 export default json;
