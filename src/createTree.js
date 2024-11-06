@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const findDifferences = (obj1, obj2) => _.union(Object.keys(obj1), Object.keys(obj2)).sort()
+const findDifferences = (obj1, obj2) => _.sortBy(_.union(Object.keys(obj1), Object.keys(obj2)))
   .map((key) => {
     if (Object.prototype.hasOwnProperty.call(obj1, key)
     && Object.prototype.hasOwnProperty.call(obj2, key)) {
